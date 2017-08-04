@@ -1,6 +1,6 @@
-CLANG ?= /usr/bin/clang++-3.8
+CLANG ?= /usr/bin/clang++-3.9
 AR ?= ar
-CPP_FLAGS ?= -Wall -Wextra -Wno-unused-parameter -nostdlib -m64 -O3 -fno-omit-frame-pointer -std=c++0x -MMD -D_LIBCPP_HAS_NO_THREADS=1 -mno-red-zone -fstack-protector-strong
+CPP_FLAGS ?=  -Wall -Wextra -Wno-unused-parameter -nostdlib -m64 -O3 -fno-omit-frame-pointer -stdlib=libc++ -std=c++14 -MMD -D_LIBCPP_HAS_NO_THREADS=1 -mno-red-zone -fstack-protector-strong
 
 #-nostdlibinc  
 
